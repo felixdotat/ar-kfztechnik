@@ -3,6 +3,170 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Impressum - KFZ Andreas Rubenthaler – Ihre Werkstatt für Autos und Oldtimer</title>
+	<meta name="description" content="KFZ Andreas Rubenthaler – zuverlässige Werkstatt für Oldtimer, Reparaturen, Pickerl, Reifen- und Ölwechsel. Persönlicher Service in Tirol.">
+	<meta name="keywords" content="KFZ, Werkstatt, Oldtimer, Pickerl, Hall, Mils">
+	<meta name="author" content="Andreas Rubenthaler">
+	<meta property="og:title" content="KFZ Andreas Rubenthaler – Ihre Werkstatt für Autos & Oldtimer">
+	<meta property="og:description" content="Oldtimer-Service, Pickerl, Reparaturen, Reifen- und Ölwechsel – alles aus einer Hand.">
+	<meta property="og:url" content="https://www.ar-kfztechnik.at">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="KFZ Andreas Rubenthaler – Ihre Werkstatt für Autos und Oldtimer">
+	<meta name="twitter:description" content="Oldtimer-Service, Pickerl, Reparaturen, Reifen- und Ölwechsel – alles aus einer Hand.">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<style>
+		@font-face{font-family:"Montserrat";src: url("fonts/montserrat.woff2") format("opentype");font-display:swap}
+		body{margin:0;padding:0;font-family: Montserrat;background-color: rgba(92,92,92,1.00);}
+		
+		header{background: url("images/headerbild_andreas_uhd.webp") no-repeat; background-size:cover;}
+		#adresse{background: url("images/werkstatt/werkstatt_quer_576px.webp") no-repeat; background-size:cover;}
+		#leistungen{background: url("images/material/material_quer_576px.webp") no-repeat; background-size:cover;}
+		#mich{background: url("images/audi/audi_quer_576px.webp") no-repeat; background-size:cover;}
+		@media screen and (max-width: 800px){
+			header{background: url("images/headerbild_andreas_fhd.webp") no-repeat; background-size:cover; background-position: 50%;}		
+			#adresse{background: url("images/werkstatt/werkstatt_quer_1920px.webp") no-repeat; background-size:cover;}
+			#leistungen{background: url("images/material/material_quer_1920px.webp") no-repeat; background-size:cover;}
+			#mich{background: url("images/audi/audi_quer_1920px.webp") no-repeat; background-size:cover;}		
+		}
+		@media screen and (max-width: 1400px){
+			header{background: url("images/headerbild_andreas_qhd.webp") no-repeat; background-size:cover;}
+			#adresse{background: url("images/werkstatt/werkstatt_quer_1440px.webp") no-repeat; background-size:cover;}
+			#leistungen{background: url("images/material/material_quer_1440px.webp") no-repeat; background-size:cover;}
+			#mich{background: url("images/audi/audi_quer_1440px.webp") no-repeat; background-size:cover;}
+		}
+		@media screen and (min-width: 2000px){
+			header{background: url("images/headerbild_andreas_uhd.webp")no-repeat; background-size:cover;}
+			#adresse{background: url("images/werkstatt/werkstatt_quer_2160px.webp") no-repeat; background-size:cover;}
+			#leistungen{background: url("images/material/material_quer_2160px.webp") no-repeat; background-size:cover;}
+			#mich{background: url("images/audi/audi_quer_2160px.webp") no-repeat; background-size:cover;}
+		}
+		
+		/*Höhe*/
+		header, #adresse, #leistungen, #mich, footer{height:100vh}
+		/*Display*/
+		#header_overlay, #adresse, #leistungen, #mich, footer, .text_overlay {display:flex;flex-direction:column;align-items:center}
+		/*Display Justify Zentrierung*/
+		#adresse, #leistungen, #mich, .text_overlay {justify-content: center}
+		.text_overlay{background-color:rgba(10,10,10,0.5);backdrop-filter:blur(3px);color: white;max-width: 90%; padding: 10px; border-radius: 10px;}
+		
+		
+		
+		
+		header #header_overlay{background-color: rgba(0,0,0,0.5); height: 100%;  justify-content: space-around; }
+		header #header_overlay .logo{height: 30vh;}
+		header #header_overlay h1{ display: none}
+		header nav{ display: flex; flex-direction: column;}
+		header nav .button{text-decoration: none; color: white; background-color: rgba(245,0,0,0.70); border: rgba(50,50,50,0.9) solid 0px; border-radius:30px; padding: 40px; text-align: center; margin-top: 15px; font-weight: 900; backdrop-filter:blur(3px)}
+		header nav .button:hover{color: white; background-color: rgba(50,50,50,0.5); border: rgba(200,200,200,0.9) solid 0px;  }
+		
+		#adresse a{color: white; margin-top: 10px; padding-top: 10px;}
+				
+		main a{text-decoration: none}
+		main h2, main h3, main p{margin: 0; padding: 0; text-align: justify; padding-left: 10px; padding-right: 10px}
+		main h3{margin-top: 15px;}
+				
+		footer{justify-content:space-around;text-align: center;color:white}
+		footer #footer_adresse{font-size: 1.5em}
+		footer img{max-width: 90vw; height: 30vh}
+		footer #oeffnungszeiten{font-size: 1.4em}
+		footer nav{}
+		footer nav a{ text-decoration: none; color: white}		
+		@media screen and (max-width: 1080px){
+			main{font-size: 1em !important}
+			.text_overlay{padding: 40px; max-width: 80vw; backdrop-filter:blur(4px), font-size:1em !importan; padding:5px}
+			header, main {font-size:1em !importan}
+			header nav .button{font-size: 1em}
+			footer *{font-size:1em}
+		}
+		
+		@media screen and (min-width: 1080px){
+			main{font-size: 1em}
+			.text_overlay{padding: 40px; max-width: 700px; backdrop-filter:blur(4px)}			
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div id="header_overlay">
+			<img src="logo.svg" alt="Logo" class="logo" fetchpriority="high">
+			<h1>AR Kfz-Technik GmbH</h1>
+			<nav id="header_nav">
+				<a href="tel:+4366475150012" class="button">+43 664 751 500 12</a>
+				<a href="mailto:office@ar-kfztechnik.at" class="button">office@ar-kfztechnik.at</a>				
+			</nav>				
+		</div>	
+	</header>
+	<main>
+		<section id="impressum">
+			<h2>Impressum</h2>
+			<div class="absatz">
+				<p>Firmenwortlaut: AR KFZ-Technik GmbH</p>
+			<p>Unternehmensgegenstand: KFZ-Werkstätte</p>
+			</div>
+			<div class="absatz">
+			<p>UID-Nr: ATU</p>
+			<p>Firmenbuchnummer: FN</p>
+			<p>Firmenbuchgericht: Innsbruck</p>
+				<p>Firmensitz: 6068 Mils</p>
+			</div>
+			<div class="absatz">
+				<p>Anschrift: Gewerbepark 4a | 6068 Mils</p>
+			<p>Telefon: </p>
+			<p>E-Mail</p>
+			</div>
+			<div class="absatz">
+			<p>Mitglied der WKÖ, Wirtschaftskammer Tirol, Innung KFZ</p>
+			<p>Anwendbare Rechtsvorschriften: Gewerbeordnung</p>
+			<p>Aufsichtsbehörde: Bezirkshauptmannschaft Innsbruck</p>
+			</div>
+			<div class="absatz">
+				<p>Berufsbezeichnung: Meisterbetrieb</p>
+			<p>Verleihungsstaat: Meisterprüfung abgelegt in Österreich</p>
+			</div>
+			<div class="absatz">
+				<p>Geschäftsführer: Walter Rubenthaler</p>
+			<p>gewerberechtlicher Geschäftsführer: Andreas Rubenthaler</p>
+			<p>Vertretungsbefugt: p.P. Andreas Rubenthaler</p>
+			<p>Beteiligungsverhältnisse:</p>
+			</div>
+			<div class="absatz">
+			<p>Zweck: Informationen zu den Dienstleistungen des Unternehmens</p>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div id="footer_adresse">
+			<img src="logo.svg" alt="Logo" class="logo">
+			<p class="kontakt">AR Kfz-Technik GmbH<br>Gewerbepark 34<br>6068 Mils<br>+43 664 751 500 12<br>office@ar-kfztechnik.at</p>
+		</div>
+		<div id="oeffnungszeiten">
+			<h3>Öffnungszeiten</h3>
+			<p>Montag bis Donnerstag<br>8:00 Uhr bis 12:00 Uhr & 13:00 Uhr bis 17:00Uhr</p>
+			<p>Freitag<br>8:00 Uhr bis 12:00 Uhr</p>
+		</div>
+		<nav id="footer_nav">
+			<a href="impressum.html" class="button link">Impressum</a>
+			<a href="datenschutz.html" class="button link">Datenschutz</a>			
+		</nav>	
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Impressum -KFZ Andreas Rubenthaler</title>
 	<meta name="author" content="Andreas Rubenthaler">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -107,3 +271,4 @@
 	</main>
 </body>
 </html>
+
